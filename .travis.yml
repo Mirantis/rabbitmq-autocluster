@@ -123,7 +123,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: ktklMK+XMOteFt+m9NHhVqKkA1Wo8f9L/cJphUmBMgb3TS+4+vAU50yY8omIyprS8poc3mBWxjYD9p9xdeDnXY2tiFrLDKCWU/jbH3awD0uL6W0Di8BYAVOGhr2Jjjp6gi/B67wHtCtzEoSSNNfMMZ+RWf4GZjJ96NXOLhPRx4k=
+    secure: NSsah5FiRhHO+lppLKXHrPM04auwL31kFwESjt3EhWOKsg7fHLuT2EfXE+/V3d9/fjg/kiwsx53+A/9eQmGqejy2aUA0GjvdcC6Z+O6rEt+Kog4HoFgrnw3LMY0vR0d++1xaxrPn49kHIIDmlaclBDHkcRvBeaXODDzJj3oHExDtoVGmrs+efVc91Hrp9izS00sDgMGdVZXhPe1EJQpJ074UiS+jmflclVeWAQBLepD0415iQb4NKkkEURhDcMWc7VRVlJez03C8peoLujP3E7L3VDyr9+ytGo7Djxd/6+aRjdGUdSaHpoCeZOmZo1plmfeZWxHJ3AGw6jgaE07dcRGbi8jOPIXamYmCIXjZInGA97/TO8s53IYm6JPKEZ1DJ8S7JPOhtqRPm0QsNUZlvyNSdLSzfN4Aqkf7uxzVt8kH5DZITyOvq9+d/jCTM4xz90X46HViUpdKa8l+SfelFxBIjsTvV9agNsNpFXXqNBeWfy8Xdeo7C/B2uIZZPeJS67Ut6pslm3Oa0RLeQ5l0uHmr9gd62mBMKiTuNMWjJQMQc6Sgre9SKFih1DECBojc8BJ5KCcCKD75wOEu/BwydYpVuqFuT56xkDM3d15oH1o3Oq7gR66DDe9hW04o4gTZ8v8b2QdBUM10UAKy8fqny96tEv8Xen6WHcoIG9+vntE=
   file_glob: true
   file:
     - PACKAGES/autocluster-${TRAVIS_TAG}.tgz
@@ -136,4 +136,4 @@ deploy:
   on:
     condition: "$TRAVIS_OTP_RELEASE = 17.5"
     tags: true
-    repo: aweber/rabbitmq-autocluster
+    repo: Mirantis/rabbitmq-autocluster
